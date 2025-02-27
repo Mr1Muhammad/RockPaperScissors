@@ -92,6 +92,7 @@ body{
   font-weight: bold;
   color: white;
   background-color: black;
+  margin-right: 3px;
 }
 
 #reset_but:active{
