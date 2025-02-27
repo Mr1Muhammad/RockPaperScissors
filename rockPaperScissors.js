@@ -11,6 +11,9 @@ function pickComputerMove(){
   return ComputerMove;
 }
 
+let isAutoPlay = false;
+let intervaID;
+
 function auto_play(){
   if(!isAutoPlay){
     intervaID = setInterval(function() {
@@ -24,6 +27,7 @@ function auto_play(){
     isAutoPlay = false;
   }
 }
+
 
 function playGame(playerMove){
 
