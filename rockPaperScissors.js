@@ -11,6 +11,19 @@ function pickComputerMove(){
   return ComputerMove;
 }
 
+function auto_play(){
+  if(!isAutoPlay){
+    intervaID = setInterval(function() {
+      const playerMove = pickComputerMove();
+      playGame(playerMove);
+    }, 1000);
+    isAutoPlay = true;
+  }
+  else{
+    clearInterval(intervaID);
+    isAutoPlay = false;
+  }
+}
 
 function playGame(playerMove){
 
